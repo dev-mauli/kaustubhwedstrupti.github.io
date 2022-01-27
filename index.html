@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
+<meta name="author" content="Dreal Software Solutions" />
+<meta name="description" content="Kaustubh Weds Trupti" />
+<meta name="keywords" content="Kaustubh Weds Trupti" />
+<title>Kaustubh Weds Trupti</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="colors/green.css" />
+<link rel="stylesheet" href="css/carousel.css">
+<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script>
+		var viewMode = getCookie("view-mode");
+	if(viewMode == "desktop"){
+		viewport.setAttribute('content', 'width=1024');
+	}else if (viewMode == "mobile"){
+		viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+	}
+	
+	
+	
+	
+	</script>
+<style>
+
+/*html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}*/
+
+.bg_heart {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+	z-index: 500;
+ }
+
+.heart {
+    position: absolute;
+    top: -50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -m-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+ }
+
+.heart:before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart:after {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+@-webkit-keyframes love {
+  0%{top:110%}
+}
+@-moz-keyframes love {
+  0%{top:110%}
+}
+@-ms-keyframes love {
+  0%{top:110%}
+}
+@keyframes love {
+  0%{top:110%}
+}
+
+
+        </style>
+
+        <script>
+        
+    var love = setInterval(function() {
+    var r_num = Math.floor(Math.random() * 40) + 1;
+    var r_size = Math.floor(Math.random() * 65) + 10;
+    var r_left = Math.floor(Math.random() * 100) + 1;
+    var r_bg = Math.floor(Math.random() * 25) + 100;
+    var r_time = Math.floor(Math.random() * 25) + 5;
+
+    
+	var a = $(document).width();
+
+ 
+	    $('.bg_heart').append("<div class='heart' style='width:" + r_size + "px;height:" + r_size + "px;left:" + r_left + "%;background:rgba(255," + (r_bg - 25) + "," + r_bg + ",1);-webkit-animation:love " + r_time + "s ease;-moz-animation:love " + r_time + "s ease;-ms-animation:love " + r_time + "s ease;animation:love " + r_time + "s ease'></div>");
+	
+        $('.bg_heart').append("<div class='heart' style='width:" + (r_size - 10) + "px;height:" + (r_size - 10) + "px;left:" + (r_left + r_num) + "%;background:rgba(255," + (r_bg - 25) + "," + (r_bg + 25) + ",1);-webkit-animation:love " + (r_time + 5) + "s ease;-moz-animation:love " + (r_time + 5) + "s ease;-ms-animation:love " + (r_time + 5) + "s ease;animation:love " + (r_time + 5) + "s ease'></div>");
+
+    
+    $('.heart').each(function() {
+        var top = $(this).css("top").replace(/[^-\d\.]/g, '');
+		var width = $(this).css("width").replace(/[^-\d\.]/g, '');
+		
+		
+
+        if (top <= -100 || width >= 1000) {
+            $(this).detach();
+        }
+    });
+}, 500);
+        
+        </script>
+</head>
+<body>
+<div id="main_container">
+		<div class="bg_heart"></div>
+	<div id="page" class="bg_heart">
+    <a class="show_menu" href="#"><img src="images/mobile_menu_open.png" alt="" title="" /></a>
+    <a class="hide_menu" href="#"><img src="images/mobile_menu_close.png" alt="" title="" /></a>
+    
+    <nav class="menu">                                                                   
+        <ul id="main_menu">
+        </ul>
+    </nav>
+    
+    <div class="title_container">
+     
+         <div style="color:black;" class="title_front">WE ARE GETTING MARRIED</div>
+         <div class="love_birds"><img src="images/birds_icon.png" alt="" title=""/></div>
+         <div style="color: red;" class="title">Kaustubh <span>&amp;</span> Trupti</div>
+         <div style="color:black;" class="title_date"><span class="swirl_left"><span class="swirl_right">10.02.2022 01:05 PM</span></span></div>
+         <div style="color: red;" class="title_under">SAVE THE DATE</div>
+         
+    </div>
+
+    <div style="opacity: 0.6;" class="slider_container">
+            <div class="slider_trans_black"></div>
+            <div id="random">
+                <div style="background-image: url(images/slider/slide1.jpg);"></div>
+                <div style="background-image: url(images/slider/slide3.jpg);"></div>                   
+            </div>
+   </div>
+   <div class="countdown_container">
+       <h2 class="centered_title">Countdown to Wedding Ceremony</h2>
+       <div id="defaultCountdown"></div>
+   </div>
+
+    <div class="about_content">
+    <div class="about_topsign">&amp;</div>
+     <div class="full_width_centered">
+     
+
+               <div class="left12_first">
+                   <span class="names_titles">THE BRIDE</span>
+                   <h2>TRUPTI BHONE</h2>
+                        <div class="about_pic_container">
+                        <span class="about_picframe"></span>
+                        <div class="about_social">
+                        </div>
+                        <div class="about_pic"><img src="images/1.jpg" alt="" title="" /></div>
+                        </div>
+                    <a href="javascript:void(0)" class="thumb_read_more">MORE ABOUT TRUPTI</a>
+                   <p style="text-align: center;">Daughter of Sau. Dipali & Shri. Dilip Madhav Bhone</p>
+				   <p style="text-align: center;">Dapoli, Tal. Dist. Palghar</p>
+                   <span style="text-align: center;" class="love_quote">Sometimes the heart sees what is invisible to the eye.</span>
+                   
+               </div>
+               <div class="left12_last">
+                   <span class="names_titles">THE GROOM</span>
+                   <h2>KAUSTUBH GHARAT</h2>
+                        <div class="about_pic_container">
+                        <span class="about_picframe"></span>
+                        <div class="about_social">
+                        </div>
+                        <div class="about_pic"><img src="images/2.jpg" alt="" title="" /></div>
+                        </div>
+                    <a href="javascript:void(0)" class="thumb_read_more">MORE ABOUT KAUSTUBH</a>
+                   <p style="text-align: center;">Son of Sau. Pratibha & Shri. Dhananjay Heera Gharat</p>
+				   <p style="text-align: center;">Karwale, Umbarpada, Tal. Dist. Palghar</p>
+                   <span style="text-align: center;" class="love_quote">Where there is love there is life.</span>
+               </div>
+    
+          <div class="clear"></div>
+        </div>  <!--end of full width-->
+      </div> <!--end of about content-->   
+
+  <div class="home_bottom">
+      <div class="full_width_centered">
+            <div class="left13"> 
+            <div class="bottom_icon"><img src="images/icon_music.png" alt="" title="" /></div>
+            <h2>HALDI CEREMONY</h2>
+            <span class="subtitle">BRING YOUR DANCING SHOES</span>
+            <p>Evening 08:00 To Midnight</p>
+            </div>
+            <div class="left13">
+            <div class="bottom_icon"><img src="images/icon_location.png" alt="" title="" /></div>
+            <h2>WEDDING LOCATION</h2>
+            <span class="subtitle">Vinyasa Resort, Karwale, Navghar Road, Saphale West</span>
+			 <p>Wedding Date & Time</p>
+			 <p style="    font-weight: bold;">10 February, 2022 Afternoon 01:05 PM</p>
+            </div>
+            <div class="left13_last">
+            <div class="bottom_icon"><img src="images/icon_gifts.png" alt="" title="" /></div>
+            <h2>RECEPTION REGISTRY</h2>
+            <span class="subtitle">GIVEN FREELY AND OUT OF PURE LOVE</span>
+            <p>Evening 6:00 To 11:00</p>
+            </div>
+            
+      </div>
+  </div>
+  
+  <div style="text-align:center;" class="full_width_centered">
+
+  <img style="width:1000px;border-radius:100px;" src="images/patrika.jpeg">
+  
+  </div>
+  
+    <div style="text-align:center;" class="full_width_centered">
+  <h2 style="
+    font-weight: bold;
+">WEDDING LOCATION</h2>
+  <iframe style="border-radius:25px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.3225271963147!2d72.83969811490884!3d19.570678286805972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7075a1581460d%3A0x9b000ea0e76104d2!2sVinyasa%20Treeland!5e0!3m2!1sen!2sin!4v1643311887853!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+  </div>
+  <style>
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+  <div style="text-align:center;" class="full_width_centered">
+  <h2 style="
+    font-weight: bold;
+">PHOTOS</h2>
+  
+  <div style="padding-left: 185px;" class="row">
+  <div class="column">
+    <img src="images/gallery/2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/gallery/3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/gallery/4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+  
+  <div class="column">
+    <img src="images/gallery/5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/gallery/6.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/gallery/7.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/gallery/8.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+  </div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:500px">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+  
+  
+  </div>
+  
+   
+   <div class="footer">
+      <div class="full_width_centered">
+       <div class="footer_sign"><span class="swirl_left_transparent"><span class="swirl_right_transparent"><img src="images/birds_icon.png" alt="" title="" /></span></span></div>
+       <div class="footer_names">KAUSTUBH &amp; TRUPTI</div>
+       <div class="footer_copyright">Made with love by <a target="_blank" href="http://drealsoftwaresolutions.com/">Dreal Software Solutions</a></div>
+      </div>
+   </div>
+</div>
+</div>
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!-- SLIDER -->
+<script type="text/javascript" src="js/jquery.skippr.js"></script>
+<script>
+	$(document).ready(function() {
+	    "use strict";
+		$("#random").skippr({
+			navType: 'bubble',
+			transition: 'fade',
+			autoPlay: true,
+			autoPlayDuration: 4000,
+			speed: 1000,
+			arrows: false
+		});
+		$("#weddingcarousel").owlCarousel({
+			items : 4,
+			itemsScaleUp : true,
+			navigationText : ["prev","next"]
+			})
+	});
+</script>
+<script src="js/owl.carousel.js"></script>
+<!-- DropDownMenu -->
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/effects.js"></script>
+<script type="text/javascript" src="js/jquery.arctext.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+  $(window).load(function() {
+   "use strict"; 
+   var $titlefront = $('.title_front').hide();
+   var $titleunder = $('.title_under').hide();
+   var $bestman = $('.bestman span').hide();
+   var $footernames = $('.footer_names').hide();
+  
+   $titlefront.show().arctext({radius: 250});
+   $titleunder.show().arctext({radius: 180, dir: -1});
+   $bestman.show().arctext({radius: 80});
+   $footernames.show().arctext({radius: 120, dir: -1});
+
+   $('#defaultCountdown').countdown({until: new Date(2022, 2 - 1, 10, 1,5), format: 'y-o-d-h-m'});	 	
+
+  });
+</script>
+<script type="text/javascript">
+var main_menu=new main_menu.dd("main_menu");
+main_menu.init("main_menu","menuhover");
+</script>
+</body>
+</html>
