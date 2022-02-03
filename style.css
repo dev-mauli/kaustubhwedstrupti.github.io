@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6, ul#main_menu li a, .title_front, .title_date, .title_und
 	font-family: 'Open Sans', sans-serif;
 }
 .title, .countdown_section, .about_topsign{
-	font-family: 'Clicker Script', cursive;
+	font-family: emoji;
 }
 
 
@@ -495,6 +495,9 @@ span.swirl_right{
 	font-size:36px;
 	color:#FFFFFF;
 	text-transform:lowercase;
+	background-color: black;
+    border-radius: 25px;
+    font-family: emoji;
 }
 span.countdown_amount {
 	font-size:80px;
